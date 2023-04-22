@@ -98,7 +98,10 @@ const LoginPage = () => {
                   value={password}
                 />
                 {password.length > 0 && (
-                  <p className="login__warning">
+                  <p
+                    className="login__warning"
+                    style={{ color: password.length >= 6 ? "green" : "" }}
+                  >
                     Password must be minimum of 6 characters!
                   </p>
                 )}
