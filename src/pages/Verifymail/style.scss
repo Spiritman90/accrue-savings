@@ -1,0 +1,31 @@
+@import "../../scss/variables/colors.scss";
+
+.verify {
+  padding: 3rem;
+  text-align: center;
+  margin-top: 15rem;
+
+  &__welcome {
+    color: $primary-color;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__btn {
+    padding: 1rem 2rem;
+    // width: 100%;
+    background-color: $secondary-color;
+    color: #fff;
+    font-size: 0.875rem;
+    font-family: $secondary-font;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+}

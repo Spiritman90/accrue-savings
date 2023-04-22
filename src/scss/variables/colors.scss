@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
+
+@font-face {
+  font-family: "Avenir Next";
+  src: local("Avenir Next"),
+    url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: local("Avenir Next"),
+    url(../../assets/fonts/AvenirNextLTPro-It.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: local("Avenir Next"),
+    url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  src: local("Avenir Next"),
+    url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format("opentype");
+}
+$secondary-color: #39cdcc;
+$primary-color: #213f7d;
+$light-color: #545f7d;
+$yellow-color: #e9b200;
+$green-color: #39cd62;
+$red-color: #e4033b;
+$background-color: #fbfbfb;
+$primary-font: "Work Sans", "sans-serif";
+$secondary-font: "Avenir Next", sans-serif;
