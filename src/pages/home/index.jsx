@@ -1,5 +1,6 @@
 import "./style.scss";
 import React from "react";
+import { FaHandshake } from "react-icons/fa";
 
 const Homepage = () => {
   return (
@@ -17,6 +18,9 @@ const Homepage = () => {
             consumers to save for their favorite purchases while simultaneously
             fostering brand loyalty and promoting healthy financial practices.
           </p>
+          <div className="home__icon">
+            <FaHandshake color="#213f7d" size="7rem" />
+          </div>
         </div>
       </section>
     </>

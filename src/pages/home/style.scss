@@ -19,4 +19,10 @@
     line-height: 2rem;
     margin-top: 5rem;
   }
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    margin-top: 5rem;
+  }
 }
