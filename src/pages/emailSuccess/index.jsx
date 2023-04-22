@@ -15,7 +15,7 @@ const Success = () => {
       <p className="success__text">
         Congratulations 🎉 ! Your details have been successfully verified.
         <br /> You can now access all the features of our platform with peace of
-        mind. <br /> Thank you for choosing us
+        mind. <br /> Thank you for choosing us.
       </p>
       <button className="success__btn" onClick={handleClick}>
         Home
