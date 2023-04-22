@@ -1,6 +1,7 @@
 import "./style.scss";
 import React, { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const UserInfo = () => {
   const [fullName, setFullName] = useState("");
@@ -9,18 +10,25 @@ const UserInfo = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [nin, setNin] = useState("");
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(fullName);
-    console.log(birthDate);
-    console.log(address);
-    console.log(phoneNumber);
-    console.log(nin);
-    console.log(`Form submitted`);
+    if (!fullName || !birthDate || !address || !phoneNumber || !nin) {
+      toast.error("Please fill all the fields");
+      return;
+    }
+    try {
+      navigate("/success");
+      toast.success("Success");
+      setFullName("");
+      setBirthDate("");
+      setAddress("");
+      setPhoneNumber("");
+    } catch (error) {
+      toast.error(error.message);
+    }
   };
-
   return (
     <>
       <section className="user">

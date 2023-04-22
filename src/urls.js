@@ -7,7 +7,7 @@ const NonAuthRoutes = {
   loginPage: "/login",
   signUpPage: "/sign-up",
   verifyEmail: "/verify-email",
-  emailSuccess: "/email-success",
+  success: "/success",
 };
 
 export { AuthRoutes, NonAuthRoutes };
